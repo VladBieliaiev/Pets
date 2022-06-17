@@ -1,0 +1,28 @@
+html {
+	background: #ffffe4;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center ;
+}
+
+.AppStyle {
+	display: flex;
+	flex-direction: column;
+}
+
+.petsInfoBlock {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 2rem;
+	background: bisque;
+	border: 1px dashed grey;
+	color:black;
+	font-size: 1.5rem;
+	list-style: none;
+}
