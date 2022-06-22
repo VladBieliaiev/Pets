@@ -2,59 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="038ac7a4-d443-4cc4-aede-bc1678410ddd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../.idea/study.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/1. Komentarze/.idea/Komentarze.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/10. Kolory i jednostki w CSS/.idea/5. Kolory i jednostki w CSS.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/11. Stylowanie tekstu/.idea/6. Stylowanie tekstu.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/12. Tło jako kolor i grafika/Gradient/.idea/7. Tło jako kolor i grafika.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/12. Tło jako kolor i grafika/Kot/.idea/Kot.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/13. Border-radius i box shadow/.idea/8. Border-radius i box shadow.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/14. Stylowanie list/.idea/8. Stylowanie list.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/15. Stylowanie tabel/.idea/10. Stylowanie tabel.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/16. Projektowanie formularzy/.idea/11 Projektowanie formularzy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/2. Struktura dokumentu HTML/.idea/Struktura dokumentu HTML.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/2. Struktura dokumentu HTML/Kodowanie liter/.idea/Kodowanie liter.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/2. Struktura dokumentu HTML/Tytul strony/.idea/Tytul strony.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/3. Formatowanie tekstu w HTML/.idea/3. Formatowanie tekstu w HTML.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/3. Formatowanie tekstu w HTML/Listy ol/.idea/Listy ol.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/3. Formatowanie tekstu w HTML/Listy ul/.idea/Listy ul.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/3. Formatowanie tekstu w HTML/Nagłówki/.idea/Nagłówki.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/3. Formatowanie tekstu w HTML/Paragrafy/.idea/Paragrafy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/4. Hiperłącza/.idea/4. Hiperłącza.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/4. Hiperłącza/1. Strona autora/.idea/1. Strona autora.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/4. Hiperłącza/2. Rozdziały książki/.idea/2. Rozdziały książki.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/5. Obrazki/.idea/5. Obrazki.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/6,Tabele/Kalendarz/.idea/Kalendarz.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/6,Tabele/Kółko i krzyżyk/.idea/Kółko i krzyżyk.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/7.CSS kaskadowe arkusze stylów/.idea/Elementy liniowe a elementy blokowe.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/8. Box model/.idea/Box model.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../HTML_CSS/WRO_FER_W_20_Prework_HTML_CSS/9. Pozycjonowanie elementów/.idea/3. Pozycjonowanie elementów.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/JavaScript.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/my-app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CreatNewUser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SingIn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/petData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/firebase.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../proectGit/.idea/proectGit.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PetData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProgressBars.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../CSS/10. Stylowanie tabel/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../CSS/10. Stylowanie tabel/styles.css" beforeDir="false" />
@@ -72,6 +22,19 @@
       <change beforePath="$PROJECT_DIR$/../../../HTML/3. Formatowanie tekstu w HTML/Znaki specjalne.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../HTML/Komentarze/Komentarze.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../HTML/Komentarze/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exam/Exam1/Exam1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exam/Exam1/Exam1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreatNewUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreatNewUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SingIn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/petData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Addpet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/1. Komentarze/.idea/Komentarze.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/10. Kolory i jednostki w CSS/.idea/5. Kolory i jednostki w CSS.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/11. Stylowanie tekstu/.idea/6. Stylowanie tekstu.iml" beforeDir="false" />
@@ -119,7 +82,15 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -156,7 +127,10 @@
       <workItem from="1655393174827" duration="12806000" />
       <workItem from="1655482548247" duration="295000" />
       <workItem from="1655482866596" duration="2728000" />
-      <workItem from="1655497782291" duration="2269000" />
+      <workItem from="1655497782291" duration="7525000" />
+      <workItem from="1655842519656" duration="7732000" />
+      <workItem from="1655920848393" duration="72000" />
+      <workItem from="1655920938561" duration="7282000" />
     </task>
     <servers />
   </component>

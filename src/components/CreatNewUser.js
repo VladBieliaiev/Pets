@@ -22,7 +22,6 @@ export const CreatNewUser = () =>{
     }
 
 
-
     return (
         <>
         <form>
@@ -31,10 +30,12 @@ export const CreatNewUser = () =>{
                 <TextField
                     d="outlined-basic"
                     label="Email..."
+                    type="text"
                     onChange={(e)=>setRegisterEmail(e.target.value)}/>
                 <TextField
                     d="outlined-basic"
                     label="Password..."
+                    type="password"
                     onChange={(e)=>setRegisterPassword(e.target.value)}/>
             </div>
             <Button variant="outlined" color="success" style={{ marginTop:"1rem"}}

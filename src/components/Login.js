@@ -1,8 +1,10 @@
 import React from "react";
 import { useState} from "react";
-import {createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut} from "firebase/auth";
+import { onAuthStateChanged, signInWithEmailAndPassword, signOut} from "firebase/auth";
 import {auth} from "../firebase";
 import {Button, TextField} from "@mui/material";
+import {CreatNewUser} from "./CreatNewUser";
+import {AddPet} from "./Addpet";
 
 
 
@@ -11,11 +13,10 @@ export const LogIn = () =>{
     const [ loginEmail, setLoginEmail ] = useState('')
     const [ loginPassword, setLoginPassword ] = useState('')
 
-    const [ registerEmail, setRegisterEmail ] = useState('')
-    const [ registerPassword, setRegisterPassword ] = useState('')
     const [ registerForm, setRegisterForm ] = useState(false)
-
+    const [ addPetForm, setAddPetForm ] = useState(false)
     const [ user, setUser ] = useState(null)
+
 
 
     const logIn = async () =>{
@@ -39,24 +40,11 @@ export const LogIn = () =>{
     })
 
 
-
-
-
-
-
-    const register = async () =>{
-        try{
-            const user = await createUserWithEmailAndPassword(auth, registerEmail, registerPassword)
-            setRegisterEmail('');
-            setRegisterPassword('');
-            console.log(user)
-        }catch (error){
-            console.log(error)
-        }
-    }
-
     const create = () =>{
         setRegisterForm(!registerForm)
+    }
+    const addPet = () =>{
+        setAddPetForm(!addPetForm)
     }
 
     if(!user) {
@@ -66,10 +54,12 @@ export const LogIn = () =>{
                 <TextField
                     d="outlined-basic"
                     label="Email..."
+                    type="text"
                     onChange={(e)=>setLoginEmail(e.target.value)}/>
                 <TextField
                     d="outlined-basic"
                     label="Password..."
+                    type="password"
                     onChange={(e)=>setLoginPassword(e.target.value)}/>
             </div>
             <Button variant="outlined" color="success" style={{ marginTop:"1rem"}}
@@ -78,23 +68,14 @@ export const LogIn = () =>{
             </Button>
             <Button variant="outlined" style={{margin:"1rem 0 0 1rem"}}
                     onClick={create}>Creat a new User</Button>
-            {registerForm ? <form>
-                <h1 >Create account</h1>
-                <div>
-                    <TextField
-                        d="outlined-basic"
-                        label="Email..."
-                        onChange={(e)=>setRegisterEmail(e.target.value)}/>
-                    <TextField
-                        d="outlined-basic"
-                        label="Password..."
-                        onChange={(e)=>setRegisterPassword(e.target.value)}/>
-                </div>
-                <Button variant="outlined" color="success" style={{ marginTop:"1rem"}}
-                        onClick={register}>
-                    Success
-                </Button>
-            </form> : null}
+            <Button variant="outlined" style={{margin:"1rem 0 0 1rem"}}
+                    onClick={addPet}>Add Pets</Button>
+
+            {registerForm ? <CreatNewUser/> : null}
+            {addPetForm ? <AddPet/> : null}
+
+
+
         </form>
     } else {
         return <>

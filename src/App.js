@@ -1,9 +1,15 @@
-// import './App.css';
+import './App.css';
 import React from "react";
-import './components/SingIn'
 import {LogIn} from "./components/Login";
-import {PetData} from "./components/petData";
-import {AppStyle} from "./App.css"
+import {AddPet, PetData} from "./components/Addpet";
+import {
+    HashRouter,
+    Route,
+    Link,
+    Switch,
+    NavLink,
+} from 'react-router-dom';
+import {Progress} from "./components/ProgressBars";
 
 
 
@@ -11,9 +17,9 @@ function App () {
 
     return (
         <div className="AppStyle">
-            <LogIn/>
-            {/*<PetData/>*/}
-            {/*<SingIn/>*/}
+            {/*<LogIn/>*/}
+            {/*<AddPet/>*/}
+            <Progress/>
         </div>
     )
 }
