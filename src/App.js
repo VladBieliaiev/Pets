@@ -9,7 +9,7 @@ import {
     Switch,
     NavLink,
 } from 'react-router-dom';
-import {Progress} from "./components/ProgressBars";
+import {Timers} from "./components/main/Timers";
 
 
 
@@ -17,9 +17,9 @@ function App () {
 
     return (
         <div className="AppStyle">
-            {/*<LogIn/>*/}
-            {/*<AddPet/>*/}
-            <Progress/>
+            <LogIn/>
+            <AddPet/>
+            <Timers />
         </div>
     )
 }

@@ -11,6 +11,9 @@ export const PetData = ({pets}) =>{
                         <span style={{marginLeft:"1rem"}}> name: {i.name} </span>
                         <span style={{marginLeft:"1rem"}}> age: {i.age}</span>
                         <span style={{marginLeft:"1rem"}}> gender: {i.gender}</span>
+                        <span style={{marginLeft:"1rem"}}> N1: {i.firstWalking}</span>
+                        <span style={{marginLeft:"1rem"}}> N2: {i.secondWalking}</span>
+                        <span style={{marginLeft:"1rem"}}> N2: {i.thirdWalking}</span>
                     </div>
                 )
             })}

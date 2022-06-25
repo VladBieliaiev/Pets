@@ -12,6 +12,9 @@ export const AddPet = () =>{
     const [ newPetName, setNewPetName ] = useState('')
     const [ newPetAge, setNewPetAge ] = useState(0)
     const [ newPetGender, setNewPetGender ] = useState('')
+    const [ firstWalking, setFirstWalking ] = useState(0)
+    const [ secondWalking, setSecondWalking ] = useState(0)
+    const [ thirdWalking, setThirdWalking ] = useState(0)
 
     const getPets = async () =>{
         const data = await getDocs(petsCollectionRef)
@@ -26,7 +29,11 @@ export const AddPet = () =>{
             const newPet = await addDoc(petsCollectionRef, {
                 name: newPetName,
                 age: newPetAge,
-                gender: newPetGender
+                gender: newPetGender,
+                firstWalking: Number(firstWalking),
+                secondWalking: Number(secondWalking),
+                thirdWalking: Number(thirdWalking),
+
             });
             console.log(newPet)
         }catch (error){
@@ -49,6 +56,20 @@ export const AddPet = () =>{
                                placeholder="Age..."
                                onChange={(e)=>setNewPetAge(e.target.value)}/>
                 </div>
+                <div style={{display:"flex", marginTop:"1rem" }}>
+                    <TextField d="outlined-basic"
+                               placeholder="N1..."
+                               onChange={(e)=>setFirstWalking(e.target.value)}
+                               />
+                    <TextField d="outlined-basic"
+                               placeholder="N2..."
+                               onChange={(e)=>setSecondWalking(e.target.value)}
+                    />
+                    <TextField d="outlined-basic"
+                               placeholder="N2..."
+                               onChange={(e)=>setThirdWalking(e.target.value)}
+                    />
+                </div>
                 <FormControl>
                     <FormLabel id="demo-controlled-radio-buttons-group">Gender</FormLabel>
                     <RadioGroup
@@ -64,7 +85,7 @@ export const AddPet = () =>{
                         onClick={addPet}>Add pet</Button>
             </div>
 
-            {/*<PetData pets={pets}/>*/}
+            <PetData pets={pets}/>
         </>
     )
 }
