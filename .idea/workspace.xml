@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="038ac7a4-d443-4cc4-aede-bc1678410ddd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/main/ProgressBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/LoggedUserInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routerTest/Contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routerTest/Main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routerTest/Navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routerTest/NotFound.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../CSS/10. Stylowanie tabel/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../CSS/10. Stylowanie tabel/styles.css" beforeDir="false" />
@@ -24,13 +28,10 @@
       <change beforePath="$PROJECT_DIR$/../../Exam/Exam1/Exam1.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Exam/Exam1/Exam1.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Addpet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Addpet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PetData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PetData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProgressBars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/Timers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/Timers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/Timers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/1. Komentarze/.idea/Komentarze.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/10. Kolory i jednostki w CSS/.idea/5. Kolory i jednostki w CSS.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/11. Stylowanie tekstu/.idea/6. Stylowanie tekstu.iml" beforeDir="false" />
@@ -91,6 +92,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="proportion" value="0.9" />
+  </component>
   <component name="ProjectId" id="2Aa2bd6811qWlIMIF5E4V3wAIbS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -134,7 +138,9 @@
       <workItem from="1655920848393" duration="72000" />
       <workItem from="1655920938561" duration="13131000" />
       <workItem from="1656011617546" duration="10204000" />
-      <workItem from="1656170255002" duration="3708000" />
+      <workItem from="1656170255002" duration="6908000" />
+      <workItem from="1656190833116" duration="6376000" />
+      <workItem from="1656252287692" duration="15663000" />
     </task>
     <servers />
   </component>

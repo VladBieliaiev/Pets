@@ -5,6 +5,8 @@ import {auth} from "../firebase";
 import {Button, TextField} from "@mui/material";
 import {CreatNewUser} from "./CreatNewUser";
 import {AddPet} from "./Addpet";
+import {LoggedUserInfo} from "./main/LoggedUserInfo";
+import {Link, useHistory} from "react-router-dom";
 
 
 
@@ -47,8 +49,10 @@ export const LogIn = () =>{
         setAddPetForm(!addPetForm)
     }
 
+
     if(!user) {
         return <form >
+            <Link to='/main'><Button>Main page</Button></Link>
             <h1 >Login </h1>
             <div>
                 <TextField
@@ -79,6 +83,7 @@ export const LogIn = () =>{
         </form>
     } else {
         return <>
+            <Link to='/main'><Button>Main page</Button></Link>
             <h2>Logged User : <p style={{color:"green"}}>{user.email}</p></h2>
             <Button variant="outlined" color="error" style={{width:"6rem"}}
                     onClick={logOut}>

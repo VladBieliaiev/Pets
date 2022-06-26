@@ -19,6 +19,11 @@ export const Timers = () =>{
         walkingTimesBetween2: 0,
         walkingTimesBetween3: 0,
     })
+    const [ timesBetweenEating, setTimesBetweenEating ] = useState({
+        eatingTimesBetween1: 0,
+        eatingTimesBetween2: 0,
+        eatingTimesBetween3: 0,
+    })
 
     const dataRef = collection(db,"petData")
 
@@ -33,11 +38,18 @@ export const Timers = () =>{
                 walkingTimesBetween3: ((24 - data.docs[0].data().thirdWalking) + (data.docs[0].data().firstWalking) * 36000),
             }
         })
+        // setTimesBetweenEating(prevState => {
+        //     return {
+        //         ...prevState,
+        //         eatingTimesBetween1: (data.docs[0].data()),
+        //         eatingTimesBetween2: 0,
+        //         eatingTimesBetween3: 0,
+        //     }
+        // })
     }
         getPetsData();
     },[])
 
-    console.log(timesBetweenWalking.walkingTimesBetween2)
 
     useEffect(()=>{
         eatInterval = setInterval(()=>{
