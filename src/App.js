@@ -1,31 +1,43 @@
 import './App.css';
 import React, {useEffect} from "react";
 import {LogIn} from "./components/Login";
-// import { PetData } from "./components/Addpet";
-import {
-    HashRouter,
-    Route,
-    Link,
-    Switch,
-    NavLink, Router, BrowserRouter,Routes,
-} from 'react-router-dom';
-import {Timers} from "./components/main/Timers";
+import {Route, BrowserRouter, Routes, useNavigate,} from 'react-router-dom';
 import {useState} from "react";
 import {getAuth, onAuthStateChanged} from "firebase/auth";
 import {Main} from "./components/Main";
-import {Contact} from "./routerTest/Contact";
-import {NotFound} from "./routerTest/NotFound";
-import {Navigation} from "./routerTest/Navigation";
+import {auth, db} from "./firebase";
+import {collection, getDocs} from "firebase/firestore";
 
 
 function App () {
+    // const [ logedUser, setLogedUser ] = useState({})
+    // const auth = getAuth();
+    // const user = auth.currentUser;
+    // // let navigateLog = useNavigate();
+    // //
+    // useEffect(()=>{
+    //     onAuthStateChanged(auth,(currentU) =>{
+    //         if(currentU) {
+    //             setLogedUser(currentU)
+    //             console.log(logedUser)
+    //         }
+    //         else{
+    //             // navigateLog('/')
+    //         }
+    //     })
+    // }, [logedUser])
 
+    // useEffect(()=>{
+    //    if(logedUser){
+    //        navigateLog('/main');
+       // }
+    // },[])
 
     return (
             <div className="AppStyle">
                 <BrowserRouter>
                     <Routes>
-                        <Route exact path='/' element={<LogIn />}/>
+                        <Route path='/' element={<LogIn />}/>
                         <Route path='/main' element={<Main />}/>
                         {/*<Timers />*/}
                         {/*<AddPet/>*/}

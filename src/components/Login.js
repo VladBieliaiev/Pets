@@ -1,12 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { useState} from "react";
-import { onAuthStateChanged, signInWithEmailAndPassword, signOut} from "firebase/auth";
-import {auth} from "../firebase";
+import {getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut} from "firebase/auth";
 import {Button, TextField} from "@mui/material";
 import {CreatNewUser} from "./CreatNewUser";
 import {AddPet} from "./Addpet";
-import {LoggedUserInfo} from "./main/LoggedUserInfo";
-import {Link, useHistory} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
+import '../App.css';
 
 
 
@@ -18,15 +17,38 @@ export const LogIn = () =>{
     const [ registerForm, setRegisterForm ] = useState(false)
     const [ addPetForm, setAddPetForm ] = useState(false)
     const [ user, setUser ] = useState(null)
+    const [ notFount, setNotFound] = useState("")
+
+    const [ userEmail, setUserEmail ] = useState('false')
+    const auth = getAuth();
+    const curentUser = auth.currentUser;
 
 
+    let navigate = useNavigate();
+
+    useEffect(()=>{
+        onAuthStateChanged(auth,(currentU) =>{
+            if(currentU) {
+                setUserEmail(currentU.email)
+                navigate('/main');
+            }
+            else{
+                navigate('/')
+            }
+        })
+    }, [userEmail])
 
     const logIn = async () =>{
         try{
             const user = await signInWithEmailAndPassword(auth, loginEmail, loginPassword)
             console.log(user)
+            setNotFound("")
+            setLoginEmail('')
+            setLoginPassword('')
+
         }catch(error){
-            console.log(error)
+            setNotFound("user notFound")
+
         }
     }
 
@@ -51,10 +73,10 @@ export const LogIn = () =>{
 
 
     if(!user) {
-        return <form >
-            <Link to='/main'><Button>Main page</Button></Link>
-            <h1 >Login </h1>
-            <div>
+        return <>
+        <form className="inputsSection">
+            <h1 style={{alignSelf:'center'}}>Login </h1>
+            <div className="inputs">
                 <TextField
                     d="outlined-basic"
                     label="Email..."
@@ -66,21 +88,24 @@ export const LogIn = () =>{
                     type="password"
                     onChange={(e)=>setLoginPassword(e.target.value)}/>
             </div>
-            <Button variant="outlined" color="success" style={{ marginTop:"1rem"}}
+            <div className="buttons">
+            <Button variant="outlined" color="success"
                     onClick={logIn}>
                 Success
             </Button>
-            <Button variant="outlined" style={{margin:"1rem 0 0 1rem"}}
+            <Button variant="outlined"
                     onClick={create}>Creat a new User</Button>
-            <Button variant="outlined" style={{margin:"1rem 0 0 1rem"}}
+            <Button variant="outlined"
                     onClick={addPet}>Add Pets</Button>
-
+            </div>
+            <h1 style={{alignSelf:'center', color:'darkred'}}>{notFount}</h1>
             {registerForm ? <CreatNewUser/> : null}
             {addPetForm ? <AddPet/> : null}
 
 
 
         </form>
+        </>
     } else {
         return <>
             <Link to='/main'><Button>Main page</Button></Link>

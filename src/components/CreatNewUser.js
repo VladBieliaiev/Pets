@@ -3,6 +3,8 @@ import {useState} from "react";
 import {createUserWithEmailAndPassword} from "firebase/auth";
 import {auth} from "../firebase";
 import {Button, TextField} from "@mui/material";
+import '../App.css';
+import {theme} from "./main/ProgressBar";
 
 
 
@@ -24,9 +26,9 @@ export const CreatNewUser = () =>{
 
     return (
         <>
-        <form>
-            <h1 >Create account</h1>
-            <div>
+        <form className="createNewUser">
+            <h1 style={{alignSelf:'center'}}>Create account</h1>
+            <div className="inputs">
                 <TextField
                     d="outlined-basic"
                     label="Email..."
@@ -38,7 +40,8 @@ export const CreatNewUser = () =>{
                     type="password"
                     onChange={(e)=>setRegisterPassword(e.target.value)}/>
             </div>
-            <Button variant="outlined" color="success" style={{ marginTop:"1rem"}}
+            <Button theme={theme}
+                variant="outlined" color="success" style={{alignSelf:'self-start'}}
                     onClick={register}>
                 Success
             </Button>

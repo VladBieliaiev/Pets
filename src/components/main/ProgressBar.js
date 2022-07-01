@@ -4,14 +4,16 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import {useEffect, useState} from "react";
 import { createTheme } from '@mui/material/styles';
-import {indigo, cyan} from "@mui/material/colors";
+import {indigo, cyan, lightGreen, amber} from "@mui/material/colors";
 import {ThemeProvider} from "@emotion/react";
 
 
-const theme = createTheme({
+export const theme = createTheme({
     palette: {
-        primary: cyan,
-        secondary: indigo,
+        primary: {
+            // main: '#f56e62',
+            main: '#fa857a',
+        },
     },
 });
 
@@ -33,9 +35,9 @@ export const ProgressBar = ({props}) => {
                     <Box sx={{ width: '100%', mr: 1 }}>
                         <LinearProgress variant="determinate" value={progress}
                                         color="primary"
-                                        style={{height:"1.5rem", borderRadius:"24px", background:"pink"}}/>
+                                        style={{width:'15rem',height:"1.5rem", borderRadius:"24px", background:"#b3cf9b"}}/>
                     </Box>
-                    <Box sx={{ minWidth: 35 }}>
+                    <Box sx={{ minWidth: 50 }}>
                         <Typography variant="body2" color="text.secondary">{`${Math.round(
                             progress
                         )}%`}</Typography>

@@ -1,31 +1,181 @@
 /** {*/
 /*	border: 1px solid red;*/
 /*}*/
-html {
-	background: #ffffe4;
+/*html {*/
+/*	background: #ffffe4;*/
+/*	margin: 0;*/
+/*	padding: 0;*/
+/*	border: 0;*/
+/*	height: 100%;*/
+/*	display: flex;*/
+/*	flex-direction: column;*/
+/*	justify-content: center;*/
+/*	align-items: center ;*/
+/*}*/
+
+/*.AppStyle {*/
+/*	display: flex;*/
+/*	flex-direction: column;*/
+/*}*/
+
+/*.petsInfoBlock {*/
+/*	display: flex;*/
+/*	flex-direction: column;*/
+/*	justify-content: center;*/
+/*	margin-top: 2rem;*/
+/*	background: bisque;*/
+/*	border: 1px dashed grey;*/
+/*	color:black;*/
+/*	font-size: 1.5rem;*/
+/*	list-style: none;*/
+/*}*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center ;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-.AppStyle {
-	display: flex;
-	flex-direction: column;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
-.petsInfoBlock {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin-top: 2rem;
-	background: bisque;
-	border: 1px dashed grey;
-	color:black;
-	font-size: 1.5rem;
+body {
+	line-height: 1;
+}
+ol, ul {
 	list-style: none;
 }
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+.AppStyle{
+	background: #c9b542;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.inputsSection{
+	background: #d6c351;
+	box-shadow: 0 0 2rem #7d712d;
+	padding: 4rem;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+	/*align-items: center;*/
+	font-size: 1.5rem;
+	color: #5e572a;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.inputs{
+	margin: 1rem 0;
+}
+
+.buttons{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+
+.createNewUser{
+	display: flex;
+	flex-direction: column;
+}
+
+.addPet {
+	display: flex;
+	flex-direction: column;
+}
+
+.radioInput{
+	display: flex;
+	flex-direction: column;
+}
+
+.mainPage{
+	background: #b3cf9b;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.timerPage{
+	align-self: center;
+	justify-self: center;
+	background: #c2dbab;
+	display: flex;
+	align-items: center;
+	/*padding: 10rem;*/
+	padding: 5rem;
+	margin-top: 14rem;
+	border-radius: 25px;
+	box-shadow: 0 0 2rem #94ab80;
+
+
+}
+
+.petsImg{
+	margin-left: 3rem;
+}
+
+.progressiveBars{
+	display: flex;
+	flex-direction: column;
+
+	margin-left: 5rem;
+	margin-right: 7rem;
+}
+
+.loggedUserInfo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 12rem;
+	font-size: 1.2rem;
+	font-family: 'Roboto', sans-serif;
+	color: green;
+}
+
+
+
+
+
+

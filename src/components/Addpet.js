@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from "react"
 import { db } from "../firebase"
-import { collection, getDocs, addDoc, deleteDoc, doc  } from "firebase/firestore"
+import { collection, getDocs, addDoc } from "firebase/firestore"
 import "../App.css"
 import {Button, FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, TextField} from "@mui/material";
-import {PetData} from "./PetData";
+// import {PetData} from "./PetData";
 
 export const AddPet = () =>{
     const [ pets, setPets ] = useState([]);
@@ -46,35 +46,41 @@ export const AddPet = () =>{
 
     return (
         <>
-            <div style={{display:"flex", flexDirection:"column"}}>
-                <div style={{display:"flex", marginTop:"1rem" }}>
+            <div className='addPet'>
+                <h1 style={{alignSelf:'center'}}>Fill your pet info...</h1>
+                <div className="inputs">
                     <TextField d="outlined-basic"
-                               placeholder="Name..."
+                               label="Pets Name..."
+                               type="text"
                                onChange={(e)=>setNewPetName(e.target.value)}/>
                     <TextField d="outlined-basic"
+                                label="Pets Age..."
                                type="number"
-                               placeholder="Age..."
                                onChange={(e)=>setNewPetAge(e.target.value)}/>
                 </div>
-                <div style={{display:"flex", marginTop:"1rem" }}>
+                <div style={{marginBottom:'1rem',display:'flex',flexDirection:"column"}}>
                     <TextField d="outlined-basic"
-                               placeholder="N1..."
+                               label="First Walk"
+                               type="number"
                                onChange={(e)=>setFirstWalking(e.target.value)}
                                />
                     <TextField d="outlined-basic"
-                               placeholder="N2..."
+                               label="Second Walk"
+                               type="number"
                                onChange={(e)=>setSecondWalking(e.target.value)}
                     />
                     <TextField d="outlined-basic"
-                               placeholder="N2..."
+                               label="Third Walk"
+                               type="number"
                                onChange={(e)=>setThirdWalking(e.target.value)}
                     />
                 </div>
-                <FormControl>
-                    <FormLabel id="demo-controlled-radio-buttons-group">Gender</FormLabel>
+                <FormControl className='radioInput'>
+                    <FormLabel id="demo-controlled-radio-buttons-group" style={{fontSize:"1.2rem"}}>Gender</FormLabel>
                     <RadioGroup
                         aria-labelledby="demo-controlled-radio-buttons-group"
                         name="controlled-radio-buttons-group"
+                        className="inputs"
                         onChange={(e)=>setNewPetGender(e.target.value)}>
                         <FormControlLabel value="female" control={<Radio />} label="Female" />
                         <FormControlLabel value="male" control={<Radio />} label="Male" />
@@ -85,7 +91,7 @@ export const AddPet = () =>{
                         onClick={addPet}>Add pet</Button>
             </div>
 
-            <PetData pets={pets}/>
+            {/*<PetData pets={pets}/>*/}
         </>
     )
 }
