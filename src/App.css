@@ -143,12 +143,18 @@ table {
 	background: #c2dbab;
 	display: flex;
 	align-items: center;
-	/*padding: 10rem;*/
-	padding: 5rem;
-	margin-top: 14rem;
+	/*padding: 5rem;*/
+	margin-top: 8rem;
 	border-radius: 25px;
 	box-shadow: 0 0 2rem #94ab80;
 
+
+}
+
+.petsInfo{
+	color: #ff738d;
+	font-size: 3rem;
+	font-family: 'Roboto', sans-serif;
 
 }
 

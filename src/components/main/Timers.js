@@ -4,8 +4,8 @@ import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
 import {ProgressBar} from "./ProgressBar";
 import {collection, getDocs} from "firebase/firestore";
 import {db} from "../../firebase";
-import dog1 from "../../content/Spec_indicator_good.svg";
-import dog2 from "../../content/Spec_indicator_fail.svg";
+import dog1 from "../../content/dog1normal.svg";
+import dog2 from "../../content/dogsad.svg";
 import {Tooltip, Zoom} from "@mui/material";
 import { styled } from '@mui/material/styles';
 
@@ -21,14 +21,10 @@ export const Timers = () =>{
     const [ dogState2, setDogState2 ] = useState(dog2);
     const [ walking, setWalking ] = useState(0);
     const [ walkingIntervalMil, setWalkingIntervalMil ] = useState(1000);
+    const [ eatingIntervalMs, setEatingIntervalMs ] = useState(1000);
     const [ eat, setEat ] = useState(0);
     const [ petsData, setPetsData] = useState([]);
 
-    const [ walkingHours, seTWalkingHours ] = useState({
-        walkingTimes1: 0,
-        walkingTimes2: 0,
-        walkingTimes3: 0,
-    })
     const [ quantityHoursBetweenWalking, setQuantityHoursBetweenWalking ] = useState({
         quantityHoursBetweenWalking1_2:0,
         quantityHoursBetweenWalking2_3: 0,
@@ -39,24 +35,26 @@ export const Timers = () =>{
         hoursLeftBeforeWalk2: 0,
         hoursLeftBeforeWalk3: 0,
     })
-    // const [ timesBetweenEating, setTimesBetweenEating ] = useState({
-    //     eatingTimesBetween1: 0,
-    //     eatingTimesBetween2: 0,
-    //     eatingTimesBetween3: 0,
-    // })
+
+    const [ quantityHoursBetweenFeeding, setQuantityHoursBetweenFeeding ] = useState({
+        quantityHoursBetweenFeeding1_2: 0,
+        quantityHoursBetweenFeeding2_3: 0,
+        quantityHoursBetweenFeeding3_1: 0,
+    });
+    const [ hoursLeftBeforeFeeding, setHoursBeforeFeeding ] = useState({
+        hoursLeftBeforeFeeding1: 0,
+        hoursLeftBeforeFeeding2: 0,
+        hoursLeftBeforeFeeding3: 0,
+    });
 
     const dataRef = collection(db,"petData")
 
     const time = new Date();
-    const aHour = time.getHours();
-
-
-
 
     const getPetsData = async () =>{
-        const data = await getDocs(dataRef)
+        await getDocs(dataRef)
             .then(data => setPetsData(data.docs[0].data()))
-            setQuantityHoursBetweenWalking(prevState => {
+        setQuantityHoursBetweenWalking(prevState => {
             return{
                 ...prevState,
                 quantityHoursBetweenWalking1_2: (petsData.secondWalking - petsData.firstWalking),
@@ -72,52 +70,95 @@ export const Timers = () =>{
                 hoursLeftBeforeWalk3: petsData.thirdWalking - time.getHours() ,
             }
         })
+        setQuantityHoursBetweenFeeding(prevState => {
+            return{
+                ...prevState,
+                quantityHoursBetweenFeeding1_2: (petsData.secondFeeding - petsData.firstFeeding),
+                quantityHoursBetweenFeeding2_3: (petsData.thirdFeeding - petsData.secondFeeding),
+                quantityHoursBetweenFeeding3_1: ((24 - petsData.thirdFeeding) + petsData.firstFeeding),
+            }
+        })
+        setHoursBeforeFeeding(prevState => {
+            return{
+                ...prevState,
+                hoursLeftBeforeFeeding1: petsData.firstFeeding - time.getHours(),
+                hoursLeftBeforeFeeding2: petsData.secondFeeding - time.getHours(),
+                hoursLeftBeforeFeeding3: petsData.thirdFeeding -time.getHours(),
+            }
+        })
     };
 
 
 
-    const add = () =>{
-        setWalking(b);
-        setWalkingIntervalMil(a)
-    }
-
-
-
-
-
-
-
-
-
     let a = null;
-    let b = null
+    let walkingProcess = null;
+    let eatingProcess = null
+    let b = null;
 
-    useEffect(()=>{
-    const currentProgress = () =>{
-        // if((hoursLeftBeforeWalk.hoursLeftBeforeWalk3 + 24) < (hoursLeftBeforeWalk.hoursLeftBeforeWalk1 + 24) &&
-        //     (hoursLeftBeforeWalk.hoursLeftBeforeWalk3 + 24) < (hoursLeftBeforeWalk.hoursLeftBeforeWalk2 + 24)){
-            a = quantityHoursBetweenWalking.quantityHoursBetweenWalking3_1 * 36000;
-            b = 100 - Math.floor(100 / quantityHoursBetweenWalking.quantityHoursBetweenWalking3_1 *
-                hoursLeftBeforeWalk.hoursLeftBeforeWalk1);
-        // }
+
+        const currentWalkingProgress = () =>{
+            if (time.getHours() > petsData.firstWalking && time.getHours() < petsData.secondWalking) {
+                a = quantityHoursBetweenWalking.quantityHoursBetweenWalking1_2 * 36000;
+                walkingProcess = 100 - Math.floor(100 / quantityHoursBetweenWalking.quantityHoursBetweenWalking1_2 *
+                    hoursLeftBeforeWalk.hoursLeftBeforeWalk2);
+            }
+            if(time.getHours() > petsData.secondWalking && time.getHours() < petsData.thirdWalking){
+                a = quantityHoursBetweenWalking.quantityHoursBetweenWalking2_3 * 36000;
+                walkingProcess = 100 - Math.floor(100 / quantityHoursBetweenWalking.quantityHoursBetweenWalking2_3 *
+                    hoursLeftBeforeWalk.hoursLeftBeforeWalk3);
+            }
+            if(time.getHours() > petsData.thirdWalking || time.getHours() < petsData.firstWalking){
+                a = quantityHoursBetweenWalking.quantityHoursBetweenWalking3_1 * 36000;
+                walkingProcess = 100 - Math.floor(100 / quantityHoursBetweenWalking.quantityHoursBetweenWalking3_1 *
+                    hoursLeftBeforeWalk.hoursLeftBeforeWalk1)
+            }
+        }
+
+        const currentFeedingProgress = () =>{
+            if(time.getHours() > petsData.firstFeeding && time.getHours() < petsData.secondFeeding){
+                b = quantityHoursBetweenFeeding.quantityHoursBetweenFeeding1_2 * 36000;
+                eatingProcess = 100 - Math.floor(100 / quantityHoursBetweenFeeding.quantityHoursBetweenFeeding1_2 *
+                    hoursLeftBeforeFeeding.hoursLeftBeforeFeeding2)
+            }
+            if(time.getHours() > petsData.secondFeeding && time.getHours() < petsData.thirdFeeding){
+                b = quantityHoursBetweenFeeding.quantityHoursBetweenFeeding3_1 * 36000;
+                eatingProcess = 100 - Math.floor(100 / quantityHoursBetweenFeeding.quantityHoursBetweenFeeding2_3 *
+                    hoursLeftBeforeFeeding.hoursLeftBeforeFeeding3)
+            }
+            if(time.getHours() > petsData.thirdFeeding || time.getHours() < petsData.firstFeeding){
+                b = quantityHoursBetweenFeeding.quantityHoursBetweenFeeding3_1 * 36000;
+                eatingProcess = 100 - Math.floor(100 / quantityHoursBetweenFeeding.quantityHoursBetweenFeeding3_1 *
+                    hoursLeftBeforeFeeding.hoursLeftBeforeFeeding1);
+            }
+        }
+
+
+
+    const refreshProgress = () =>{
+        setWalkingIntervalMil(a);
+
+        setEatingIntervalMs(b)
+        setWalking(walkingProcess);
+        setEat(eatingProcess);
     }
-        currentProgress();
-    },[]);
 
 
     useEffect(()=>{
         getPetsData();
-        add();
-        console.log('b = ' + b);
+        currentFeedingProgress();
+        currentWalkingProgress();
+        refreshProgress();
     },[]);
+
+
 
 
     useEffect(()=>{
         walkingInterval = setInterval(() => {
             setWalking(prevState => prevState + 1)
-        }, walkingIntervalMil / 100)
+        },  walkingIntervalMil )
         if(walking === 100){
-            clearInterval(walkingInterval)
+            clearInterval(walkingInterval);
         }
         return () => clearInterval(walkingInterval);
     },[walking])
@@ -125,15 +166,15 @@ export const Timers = () =>{
     useEffect(()=>{
         eatInterval = setInterval(()=>{
             setEat(prevState => prevState + 1)
-        },100)
+        },eatingIntervalMs )
         if(eat === 100){
             clearInterval(eatInterval)
         }
         return ()=> clearInterval(eatInterval);
-    },[eat])
+    },[eat]);
 
 
-
+//
     const StyledTooltip = styled(({ className, ...props }) => (
         <Tooltip {...props} classes={{ popper: className }} />
     ))`
@@ -149,13 +190,13 @@ export const Timers = () =>{
         opacity: 50%;
         width: 18rem;
         height: 10rem;
-      }
+      };
     `;
 
     return (
         <>
-            <h1>{b}</h1>
-            <h1>{petsData.name}</h1>
+            { eat > 50 ? <h3 className='petsInfo'>I want EAT! please...</h3> : null}
+            { walking > 50 ? <h3 className='petsInfo'>I want to WALK! please...</h3> : null}
             <div className='timerPage'>
                 <div className="petsImg">
                 <StyledTooltip TransitionComponent={Zoom}
@@ -163,11 +204,10 @@ export const Timers = () =>{
                                  i am ${petsData.age} years old`}
                          placement="top"
                          arrow>
-                    {walking > 50 ? <img src={dogState2} alt="" style={{width: "9rem", height:"9rem", margin:"1rem"}}/> :
-                        <img src={dogState} alt="" style={{width: "9rem", height:"9rem", margin:"1rem"}}/>}
+                    {walking > 50 || eat > 50 ? <img src={dogState2} alt="" style={{width: "17rem", height:"17rem", margin:"1rem"}}/> :
+                        <img src={dogState} alt="" style={{width: "17rem", height:"17rem", margin:"1rem"}}/>}
                 </StyledTooltip>
                 </div>
-                {/*<ProgressBar props={walking}/>*/}
                 <div className='progressiveBars'>
                     <ProgressBar props={walking}/>
                     {walking > 5 ? <PetsIcon style={{color:"orange",fontSize:"2rem", marginBottom:'1rem'}} onClick={() => setWalking(0)}>toilet</PetsIcon> : null}

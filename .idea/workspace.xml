@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="038ac7a4-d443-4cc4-aede-bc1678410ddd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/YourApp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/9la7_7a0y_220329.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/normalState.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../CSS/10. Stylowanie tabel/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../CSS/10. Stylowanie tabel/styles.css" beforeDir="false" />
@@ -26,24 +23,11 @@
       <change beforePath="$PROJECT_DIR$/../../Exam/Exam1/Exam1.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Exam/Exam1/Exam1.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Addpet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Addpet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CreatNewUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreatNewUser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/LoggedUserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/LoggedUserInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/ProgressBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/ProgressBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main/Timers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/Timers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/firebase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routerTest/Contact.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routerTest/Main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routerTest/Navigation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routerTest/NotFound.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/1. Komentarze/.idea/Komentarze.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/10. Kolory i jednostki w CSS/.idea/5. Kolory i jednostki w CSS.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/11. Stylowanie tekstu/.idea/6. Stylowanie tekstu.iml" beforeDir="false" />
@@ -162,7 +146,9 @@
       <workItem from="1656438275221" duration="17375000" />
       <workItem from="1656525041947" duration="19984000" />
       <workItem from="1656606825500" duration="13497000" />
-      <workItem from="1656630455705" duration="7508000" />
+      <workItem from="1656630455705" duration="8087000" />
+      <workItem from="1656674540351" duration="728000" />
+      <workItem from="1656679676817" duration="19120000" />
     </task>
     <servers />
   </component>

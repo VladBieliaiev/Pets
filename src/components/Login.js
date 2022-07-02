@@ -21,7 +21,7 @@ export const LogIn = () =>{
 
     const [ userEmail, setUserEmail ] = useState('false')
     const auth = getAuth();
-    const curentUser = auth.currentUser;
+    const curentU = auth.currentUser;
 
 
     let navigate = useNavigate();

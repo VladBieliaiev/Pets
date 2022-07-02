@@ -15,6 +15,9 @@ export const AddPet = () =>{
     const [ firstWalking, setFirstWalking ] = useState(0)
     const [ secondWalking, setSecondWalking ] = useState(0)
     const [ thirdWalking, setThirdWalking ] = useState(0)
+    const [ firstFeeding, setFirstFeeding ] = useState(0);
+    const [ secondFeeding, setSecondFeeding ] = useState(0)
+    const [ thirdFeeding, setThirdFeeding ] = useState(0)
 
     const getPets = async () =>{
         const data = await getDocs(petsCollectionRef)
@@ -33,7 +36,9 @@ export const AddPet = () =>{
                 firstWalking: Number(firstWalking),
                 secondWalking: Number(secondWalking),
                 thirdWalking: Number(thirdWalking),
-
+                firstFeeding: Number(firstFeeding),
+                secondFeeding: Number(secondFeeding),
+                thirdFeeding: Number(thirdFeeding),
             });
             console.log(newPet)
         }catch (error){
@@ -54,27 +59,48 @@ export const AddPet = () =>{
                                type="text"
                                onChange={(e)=>setNewPetName(e.target.value)}/>
                     <TextField d="outlined-basic"
-                                label="Pets Age..."
+                               label="Pets Age..."
                                type="number"
                                onChange={(e)=>setNewPetAge(e.target.value)}/>
                 </div>
-                <div style={{marginBottom:'1rem',display:'flex',flexDirection:"column"}}>
-                    <TextField d="outlined-basic"
-                               label="First Walk"
-                               type="number"
-                               onChange={(e)=>setFirstWalking(e.target.value)}
-                               />
-                    <TextField d="outlined-basic"
-                               label="Second Walk"
-                               type="number"
-                               onChange={(e)=>setSecondWalking(e.target.value)}
-                    />
-                    <TextField d="outlined-basic"
-                               label="Third Walk"
-                               type="number"
-                               onChange={(e)=>setThirdWalking(e.target.value)}
-                    />
+                <div style={{display:'flex'}}>
+                    <div style={{marginBottom:'1rem',display:'flex',flexDirection:"column"}}>
+                        <TextField d="outlined-basic"
+                                   label="First Walk"
+                                   type="number"
+                                   onChange={(e)=>setFirstWalking(e.target.value)}
+                        />
+                        <TextField d="outlined-basic"
+                                   label="Second Walk"
+                                   type="number"
+                                   onChange={(e)=>setSecondWalking(e.target.value)}
+                        />
+                        <TextField d="outlined-basic"
+                                   label="Third Walk"
+                                   type="number"
+                                   onChange={(e)=>setThirdWalking(e.target.value)}
+                        />
+                    </div>
+                    <div style={{marginBottom:'1rem',display:'flex',flexDirection:"column"}}>
+
+                        <TextField d="outlined-basic"
+                                   label="First Feeding"
+                                   type="number"
+                                   onChange={(e)=>setFirstFeeding(e.target.value)}
+                        />
+                        <TextField d="outlined-basic"
+                                   label="Second Feeding"
+                                   type="number"
+                                   onChange={(e)=>setSecondFeeding(e.target.value)}
+                        />
+                        <TextField d="outlined-basic"
+                                   label="Third FeedingFeeding"
+                                   type="number"
+                                   onChange={(e)=>setThirdFeeding(e.target.value)}
+                        />
+                    </div>
                 </div>
+
                 <FormControl className='radioInput'>
                     <FormLabel id="demo-controlled-radio-buttons-group" style={{fontSize:"1.2rem"}}>Gender</FormLabel>
                     <RadioGroup
