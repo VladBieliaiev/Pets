@@ -21,7 +21,7 @@ export const LogIn = () =>{
 
     const [ userEmail, setUserEmail ] = useState('false')
     const auth = getAuth();
-    const curentU = auth.currentUser;
+    const currentU = auth.currentUser;
 
 
     let navigate = useNavigate();
@@ -66,9 +66,11 @@ export const LogIn = () =>{
 
     const create = () =>{
         setRegisterForm(!registerForm)
+        setAddPetForm(false)
     }
     const addPet = () =>{
         setAddPetForm(!addPetForm)
+        setRegisterForm(false);
     }
 
 
@@ -101,7 +103,6 @@ export const LogIn = () =>{
             <h1 style={{alignSelf:'center', color:'darkred'}}>{notFount}</h1>
             {registerForm ? <CreatNewUser/> : null}
             {addPetForm ? <AddPet/> : null}
-
 
 
         </form>

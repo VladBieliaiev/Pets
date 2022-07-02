@@ -8,7 +8,8 @@ import dog1 from "../../content/dog1normal.svg";
 import dog2 from "../../content/dogsad.svg";
 import {Tooltip, Zoom} from "@mui/material";
 import { styled } from '@mui/material/styles';
-
+import {useNavigate} from "react-router-dom";
+import  _ from 'lodash';
 
 
 let walkingInterval = null;
@@ -90,13 +91,14 @@ export const Timers = () =>{
 
 
 
-    let a = null;
-    let walkingProcess = null;
-    let eatingProcess = null
-    let b = null;
+
+
+
 
 
         const currentWalkingProgress = () =>{
+            let a = null;
+            let walkingProcess = null;
             if (time.getHours() > petsData.firstWalking && time.getHours() < petsData.secondWalking) {
                 a = quantityHoursBetweenWalking.quantityHoursBetweenWalking1_2 * 36000;
                 walkingProcess = 100 - Math.floor(100 / quantityHoursBetweenWalking.quantityHoursBetweenWalking1_2 *
@@ -112,9 +114,13 @@ export const Timers = () =>{
                 walkingProcess = 100 - Math.floor(100 / quantityHoursBetweenWalking.quantityHoursBetweenWalking3_1 *
                     hoursLeftBeforeWalk.hoursLeftBeforeWalk1)
             }
+            setWalkingIntervalMil(a);
+            setWalking(walkingProcess);
         }
 
         const currentFeedingProgress = () =>{
+            let b = null;
+            let eatingProcess = null
             if(time.getHours() > petsData.firstFeeding && time.getHours() < petsData.secondFeeding){
                 b = quantityHoursBetweenFeeding.quantityHoursBetweenFeeding1_2 * 36000;
                 eatingProcess = 100 - Math.floor(100 / quantityHoursBetweenFeeding.quantityHoursBetweenFeeding1_2 *
@@ -130,25 +136,35 @@ export const Timers = () =>{
                 eatingProcess = 100 - Math.floor(100 / quantityHoursBetweenFeeding.quantityHoursBetweenFeeding3_1 *
                     hoursLeftBeforeFeeding.hoursLeftBeforeFeeding1);
             }
+
+            setEatingIntervalMs(b);
+            setEat(eatingProcess);
         }
 
 
 
-    const refreshProgress = () =>{
-        setWalkingIntervalMil(a);
-
-        setEatingIntervalMs(b)
-        setWalking(walkingProcess);
-        setEat(eatingProcess);
-    }
+    // const refreshProgress = () =>{
+    //     setWalkingIntervalMil(a);
+        //
+        // setEatingIntervalMs(b)
+        // setWalking(walkingProcess);
+        // setEat(eatingProcess);
+    // };
 
 
     useEffect(()=>{
         getPetsData();
-        currentFeedingProgress();
-        currentWalkingProgress();
-        refreshProgress();
+
     },[]);
+    useEffect(()=>{
+       // console.log('when change...', petsData)
+        if((!_.isEmpty(petsData)) ) {
+            console.log(petsData)
+            currentFeedingProgress();
+            currentWalkingProgress();
+            // refreshProgress();;
+        }
+    },[petsData]);
 
 
 
@@ -156,7 +172,7 @@ export const Timers = () =>{
     useEffect(()=>{
         walkingInterval = setInterval(() => {
             setWalking(prevState => prevState + 1)
-        },  walkingIntervalMil )
+        },  walkingIntervalMil)
         if(walking === 100){
             clearInterval(walkingInterval);
         }
@@ -174,7 +190,7 @@ export const Timers = () =>{
     },[eat]);
 
 
-//
+
     const StyledTooltip = styled(({ className, ...props }) => (
         <Tooltip {...props} classes={{ popper: className }} />
     ))`
@@ -192,6 +208,8 @@ export const Timers = () =>{
         height: 10rem;
       };
     `;
+//
+
 
     return (
         <>
@@ -204,8 +222,8 @@ export const Timers = () =>{
                                  i am ${petsData.age} years old`}
                          placement="top"
                          arrow>
-                    {walking > 50 || eat > 50 ? <img src={dogState2} alt="" style={{width: "17rem", height:"17rem", margin:"1rem"}}/> :
-                        <img src={dogState} alt="" style={{width: "17rem", height:"17rem", margin:"1rem"}}/>}
+                    {walking > 50 || eat > 50 ? <img src={dogState2} alt="" className='pet'/> :
+                        <img src={dogState} alt="" className='pet'/>}
                 </StyledTooltip>
                 </div>
                 <div className='progressiveBars'>

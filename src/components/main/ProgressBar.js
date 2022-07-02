@@ -4,14 +4,12 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import {useEffect, useState} from "react";
 import { createTheme } from '@mui/material/styles';
-import {indigo, cyan, lightGreen, amber} from "@mui/material/colors";
 import {ThemeProvider} from "@emotion/react";
 
 
 export const theme = createTheme({
     palette: {
         primary: {
-            // main: '#f56e62',
             main: '#fa857a',
         },
     },

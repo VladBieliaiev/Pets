@@ -3,7 +3,7 @@ import { db } from "../firebase"
 import { collection, getDocs, addDoc } from "firebase/firestore"
 import "../App.css"
 import {Button, FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, TextField} from "@mui/material";
-// import {PetData} from "./PetData";
+
 
 export const AddPet = () =>{
     const [ pets, setPets ] = useState([]);

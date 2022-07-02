@@ -33,6 +33,7 @@ export const LoggedUserInfo = () =>{
     return(
         <>
             { user ? <div className="loggedUserInfo">
+                    <h2 style={{marginBottom:'0.5rem'}}>Hello!</h2>
                     <h2 >{userEmail.email}</h2>
                     <Button variant="outlined" color="error"
                             style={{width:"8rem", marginTop:'1rem'}}

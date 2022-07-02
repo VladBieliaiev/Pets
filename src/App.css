@@ -102,6 +102,8 @@ table {
 }
 
 
+
+
 .inputs{
 	margin: 1rem 0;
 }
@@ -110,6 +112,20 @@ table {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 1rem;
+}
+@media (max-width: 425px){
+	.inputsSection{
+		padding: 1rem;
+		align-items: center;
+	}
+	.inputs{
+		align-items: center;
+	}
+	.buttons{
+		flex-direction: column;
+		margin: 0;
+		width: 13rem;
+	}
 }
 
 .createNewUser{
@@ -143,31 +159,90 @@ table {
 	background: #c2dbab;
 	display: flex;
 	align-items: center;
-	/*padding: 5rem;*/
 	margin-top: 8rem;
 	border-radius: 25px;
 	box-shadow: 0 0 2rem #94ab80;
-
-
 }
+
+@media (max-width: 600px){
+	.timerPage{
+		flex-direction: column;
+		padding: 0;
+		margin: 1rem;
+	}
+}
+
+@media (max-width:  1200px){
+	.timerPage{
+		padding: 0;
+	}
+}
+
 
 .petsInfo{
 	color: #ff738d;
-	font-size: 3rem;
+	font-size: 2.2rem;
 	font-family: 'Roboto', sans-serif;
 
+}
+@media (max-width: 600px) {
+	.petsInfo{
+		font-size: 1.5rem;
+		margin-bottom: 0.5rem;
+	}
+}
+
+@media (max-width:  1200px){
+	.petsInfo{
+		font-size: 1.5rem;
+		margin-bottom: 0.5rem;
+	}
 }
 
 .petsImg{
 	margin-left: 3rem;
 }
 
+.pet {
+	width: 17rem;
+	height: 17rem;
+	margin: 1rem;
+}
 .progressiveBars{
 	display: flex;
 	flex-direction: column;
 
 	margin-left: 5rem;
 	margin-right: 7rem;
+}
+
+
+@media (max-width: 600px) {
+	.petsImg{
+		margin: 0;
+	}
+	.pet{
+		padding: 0;
+		margin: 0;
+	}
+	.progressiveBars{
+		display: block;
+		margin-right: 5.3rem;
+		margin-bottom: 1rem;
+	}
+}
+@media (max-width:  1200px){
+	.petsImg{
+		margin:0;
+	}
+	.progressiveBars{
+		display: block;
+		margin-left: 1rem;
+		margin-top: 1rem;
+	}
+	.pet{
+		width: 15rem;
+	}
 }
 
 .loggedUserInfo{
@@ -178,6 +253,19 @@ table {
 	font-size: 1.2rem;
 	font-family: 'Roboto', sans-serif;
 	color: green;
+}
+
+@media (max-width: 600px){
+	.loggedUserInfo{
+		margin: 0;
+		font-size: 1rem;
+	}
+}
+@media (max-width:  1200px){
+	.loggedUserInfo{
+		margin-top: 5rem;
+		font-size: 1rem;
+	}
 }
 
 
