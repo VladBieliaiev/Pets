@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Pets-Care/static/css/main.e1e4f620.css",
+    "main.js": "/Pets-Care/static/js/main.7dc76e38.js",
+    "static/media/dogsad.svg": "/Pets-Care/static/media/dogsad.fc0ac4d443fa274f69419c3f749e4e2a.svg",
+    "static/media/dog1normal.svg": "/Pets-Care/static/media/dog1normal.2038c09cf02ffaf2bf7a9e3c04f08921.svg",
+    "index.html": "/Pets-Care/index.html",
+    "main.e1e4f620.css.map": "/Pets-Care/static/css/main.e1e4f620.css.map",
+    "main.7dc76e38.js.map": "/Pets-Care/static/js/main.7dc76e38.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1e4f620.css",
+    "static/js/main.7dc76e38.js"
+  ]
+}
