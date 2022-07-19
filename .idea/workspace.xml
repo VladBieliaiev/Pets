@@ -1,74 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="038ac7a4-d443-4cc4-aede-bc1678410ddd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../CSS/10. Stylowanie tabel/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../CSS/10. Stylowanie tabel/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../CSS/11 Projektowanie formularzy/css.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../CSS/3. Pozycjonowanie elementów/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../CSS/3. Pozycjonowanie elementów/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../CSS/7. Tło jako kolor i grafika/Kot/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../CSS/7. Tło jako kolor i grafika/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../CSS/7. Tło jako kolor i grafika/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../CSS/8. Border-radius i box shadow/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../CSS/8. Border-radius i box shadow/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../CSS/8. Stylowanie list/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../CSS/8. Stylowanie list/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Git.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../HTML/3. Formatowanie tekstu w HTML/Znaki specjalne.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../HTML/Komentarze/Komentarze.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../HTML/Komentarze/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Exam/Exam1/Exam1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Exam/Exam1/Exam1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Addpet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Addpet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/YourApp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/LoggedUserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/LoggedUserInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/ProgressBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/ProgressBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/Timers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/Timers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/1. Komentarze/.idea/Komentarze.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/10. Kolory i jednostki w CSS/.idea/5. Kolory i jednostki w CSS.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/11. Stylowanie tekstu/.idea/6. Stylowanie tekstu.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/12. Tło jako kolor i grafika/Gradient/.idea/7. Tło jako kolor i grafika.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/12. Tło jako kolor i grafika/Kot/.idea/Kot.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/13. Border-radius i box shadow/.idea/8. Border-radius i box shadow.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/14. Stylowanie list/.idea/8. Stylowanie list.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/15. Stylowanie tabel/.idea/10. Stylowanie tabel.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/16. Projektowanie formularzy/.idea/11 Projektowanie formularzy.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/2. Struktura dokumentu HTML/.idea/Struktura dokumentu HTML.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/2. Struktura dokumentu HTML/Kodowanie liter/.idea/Kodowanie liter.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/2. Struktura dokumentu HTML/Tytul strony/.idea/Tytul strony.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/3. Formatowanie tekstu w HTML/.idea/3. Formatowanie tekstu w HTML.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/3. Formatowanie tekstu w HTML/Listy ol/.idea/Listy ol.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/3. Formatowanie tekstu w HTML/Listy ul/.idea/Listy ul.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/3. Formatowanie tekstu w HTML/Nagłówki/.idea/Nagłówki.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/3. Formatowanie tekstu w HTML/Paragrafy/.idea/Paragrafy.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/4. Hiperłącza/.idea/4. Hiperłącza.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/4. Hiperłącza/1. Strona autora/.idea/1. Strona autora.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/4. Hiperłącza/2. Rozdziały książki/.idea/2. Rozdziały książki.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/5. Obrazki/.idea/5. Obrazki.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/6,Tabele/Kalendarz/.idea/Kalendarz.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/6,Tabele/Kółko i krzyżyk/.idea/Kółko i krzyżyk.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/7.CSS kaskadowe arkusze stylów/.idea/Elementy liniowe a elementy blokowe.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/8. Box model/.idea/Box model.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../WRO_FER_W_20_Prework_HTML_CSS/9. Pozycjonowanie elementów/.idea/3. Pozycjonowanie elementów.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../carShering/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../carShering/.idea/carShering.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../carShering/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../carShering/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../carShering/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../stl.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../stl.css" afterDir="false" />
-    </list>
+    <list default="true" id="038ac7a4-d443-4cc4-aede-bc1678410ddd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -156,6 +89,7 @@
       <workItem from="1656630455705" duration="8087000" />
       <workItem from="1656674540351" duration="728000" />
       <workItem from="1656679676817" duration="26744000" />
+      <workItem from="1658258145900" duration="220000" />
     </task>
     <servers />
   </component>
